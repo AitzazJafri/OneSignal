@@ -1,0 +1,9 @@
+﻿===================================================================================
+								ApplicationDbContext
+===================================================================================
+
+Enable-Migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations\Identity
+
+add-migration -ConfigurationTypeName OneSignal.Web.Migrations.Identity.Configuration "Initial Create"
+
+update-database -ConfigurationTypeName OneSignal.Web.Migrations.Identity.Configuration
