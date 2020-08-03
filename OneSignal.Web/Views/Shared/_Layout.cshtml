@@ -6,7 +6,18 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <style>
+        .card {
+            margin-top:20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+        .card-title{
 
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -25,12 +36,11 @@
                     @if (Request.IsAuthenticated)
                     {
 
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        if(User.IsInRole("ADMIN"))
+                        <li>@Html.ActionLink("View Apps","Index", "Home")</li>
+                        if (User.IsInRole("ADMIN"))
                         {
 
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Create App", "EditApp", "Home")</li>
                         }
                     }
                 </ul>
@@ -39,6 +49,16 @@
         </div>
     </div>
     <div class="container body-content">
+        @{
+            if(TempData["Notification"] != null)
+            {
+                <div class="alert alert-success alert-server" role="alert">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <strong>Alert</strong> -  @(TempData["Notification"].ToString())
+                </div>
+            }
+        }
+
         @RenderBody()
         <hr />
         <footer>

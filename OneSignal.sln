@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneSignal.Web", "OneSignal.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneSignal.Utility", "OneSignal.Utility\OneSignal.Utility.csproj", "{764C4585-1819-4179-93BD-BA004F581860}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneSignal.WebService", "OneSignal.WebService\OneSignal.WebService.csproj", "{8E1FD810-2BE9-4F58-9579-D46DA64127EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneSignal.Model", "OneSignal.Model\OneSignal.Model.csproj", "{FD33A8F4-8D30-4A2D-8E3D-0B01FEA3DA53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{764C4585-1819-4179-93BD-BA004F581860}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{764C4585-1819-4179-93BD-BA004F581860}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{764C4585-1819-4179-93BD-BA004F581860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E1FD810-2BE9-4F58-9579-D46DA64127EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E1FD810-2BE9-4F58-9579-D46DA64127EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E1FD810-2BE9-4F58-9579-D46DA64127EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E1FD810-2BE9-4F58-9579-D46DA64127EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD33A8F4-8D30-4A2D-8E3D-0B01FEA3DA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD33A8F4-8D30-4A2D-8E3D-0B01FEA3DA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD33A8F4-8D30-4A2D-8E3D-0B01FEA3DA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD33A8F4-8D30-4A2D-8E3D-0B01FEA3DA53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

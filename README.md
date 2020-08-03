@@ -1,7 +1,8 @@
 
 
+
 # OneSignalApp
-Asp.net C# oneSignal App create,view and update
+Asp.net MVC OneSignal for App create,view and update
 
 ## Do Not Forget 
 Change connection string in web.config to run this project.
@@ -15,6 +16,21 @@ Change connection string in web.config to run this project.
 <add name="DefaultConnection" connectionString="Data Source={Server-Name};Initial Catalog=OneSignalAssignment;user id={User-ID};password={Password};MultipleActiveResultSets=True;" providerName="System.Data.SqlClient"/>
 
 ```
+## After Running
+Two roles will be created automatically in db
+1. Admin
+2. DEO (Data Entry Operator)
 
- 
+ Two users also will be created agains each role
+ ### 1. admin@mail.com (**ADMIN**)
+#### login credentials
+username | password
+:-------:|:--------------:
+admin@mail.com | abc123
+
+### 2. deo@mail.com (DEO)
+#### login credentials
+username | password
+:-------:|:--------------:
+deo@mail.com | abc123
 
