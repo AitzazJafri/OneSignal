@@ -33,7 +33,6 @@ namespace OneSignal.WebService.service
         }
 
         #endregion
-
         #region ViewApps
         public async Task<HttpClientResponseModel<List<AppResponseModel>>> ViewApps()
         {
@@ -50,7 +49,6 @@ namespace OneSignal.WebService.service
             }
         }
         #endregion
-
         #region ViewApp
         public async Task<HttpClientResponseModel<AppResponseModel>> ViewApp(string ID)
         {

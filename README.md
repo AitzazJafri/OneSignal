@@ -5,7 +5,7 @@
 Asp.net MVC OneSignal for App create,view and update
 
 ## Do Not Forget 
-Change connection string in web.config to run this project.
+Change connection string in OneSignal.Web -> web.config to run this project.
 
 1. replace {Server-Name} with your server name.
 2. replace {User-ID} with your user id.
